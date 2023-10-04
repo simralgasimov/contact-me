@@ -9,10 +9,10 @@
   padding: 176px 135px 208px 135px;
   background: #28293e;
   display: flex;
-  align-items: center;
+  /* justify-content: space-between; */
 }
 
-.container form p {
+.container p {
   margin-bottom: 27px;
   color: var(--Text_Dark, #391400);
   font-feature-settings: "clig" off, "liga" off;
@@ -38,16 +38,6 @@
   border: 1px solid #f3d1bf;
   background: #fff;
 }
-.container input::placeholder,
-.container textarea::placeholder {
-  color: var(--Text_Dark_Gray, rgba(57, 20, 0, 0.64));
-  font-feature-settings: "clig" off, "liga" off;
-  font-family: Epilogue;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 32px;
-}
 
 .container form label {
   display: block;
@@ -56,22 +46,24 @@
 
 .container input,
 .container textarea,
-.container select {
+.container select
+{
   width: 100%;
   border: 1px solid #f3d1bf;
+
 }
-.container input [type="email"] {
+.container  input [type="email"] {
   height: 48px;
 }
 
-.container select {
+.container  select{
   height: 48px;
   padding: 0 16px;
 }
 
-.container textarea {
+.container  textarea{
   height: 135px;
-  padding: 9px 16px;
+  pa
   resize: none;
 }
 
@@ -82,7 +74,9 @@
   background: #ef6d58;
   border: none;
   float: right;
+}
 
+.container form button a {
   text-decoration: none;
   color: #fff;
   text-align: center;
@@ -122,6 +116,7 @@
 }
 
 .container .contact-me p {
+  margin-bottom: 33px;
   width: 470px;
   color: var(--Text_Light_Gray, rgba(255, 255, 255, 0.64));
   font-feature-settings: "clig" off, "liga" off;
@@ -134,17 +129,29 @@
 }
 
 .container .contact-me .cirycle {
+  /* position: relative; */
   width: 48px;
   height: 48px;
   background-color: #ef6d58;
   border-radius: 50%;
+}
+
+.container .contact-me .cirycle img {
+  /* position: absolute; */
+  /* margin: 13px; */
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.container .contact-me .cirycle p {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.container .contact-me li p {
-  margin-left: 16px;
+  align-content: center;
+  /* margin-left: 90px; */
+  width: 283px;
   color: var(--Text_Light, #fff);
   font-feature-settings: "clig" off, "liga" off;
 
@@ -153,13 +160,4 @@
   font-style: normal;
   font-weight: 400;
   line-height: 32px;
-}
-.container ul {
-  margin-top: 33px;
-}
-.container ul li {
-  margin-bottom: 16px;
-  list-style-type: none;
-  display: flex;
-  align-items: center;
 }
